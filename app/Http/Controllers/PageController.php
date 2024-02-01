@@ -7,6 +7,6 @@ use Illuminate\Http\Request;
 class PageController extends Controller
 {
     public function index() {
-        return 'La mia homepage';
+        return view('movie.index');
     }
 }
