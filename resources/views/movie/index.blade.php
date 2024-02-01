@@ -1,7 +1,14 @@
-<h1>
-    qui i movies
-</h1>
+@extends('layouts.app')
 
-@php
-    var_dump($movies);
-@endphp
+@section('main-content')
+
+
+    @foreach ($movies as $movie)
+        <article>
+            {{ $movie -> title }}
+        </article>
+    @endforeach
+
+
+@endsection
+
