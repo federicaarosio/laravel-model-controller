@@ -6,7 +6,7 @@
     <div class="row">
 
         @foreach ($movies as $movie)
-        <div class="col-3 mb-4">
+        <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
             <div class="card" style="width: 18rem; height: 100%;">
                 <div class="card-body">
                     <h5 class="card-title">{{ $movie -> title }}</h5>
