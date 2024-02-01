@@ -1,1 +1,39 @@
 @import "../../node_modules/bootstrap/scss/bootstrap";
+
+@import '../scss/partials/variables';
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+body {
+    background-color: $bg-color;
+    font-family: 'Source Code Pro', monospace;
+    font-size: .8rem;
+}
+
+h1 {
+   color: $accent-color;
+   font-weight: bold;
+   text-transform: uppercase;
+   letter-spacing: .5rem;
+   text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
+}
+
+div.card {
+    background-color: $card-bg-color;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    color: $text-color;
+
+    opacity: .7;
+    transition: all 150ms ease-in-out;
+
+    &:hover {
+        transform: scale(1.25);
+        opacity: 1;
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        z-index: 10;
+    }
+
+    .card-title {
+        color: $accent-color;
+    }
+}
